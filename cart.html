@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Malik Mart</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <!-- ✅ Malik Mart Navbar -->
+    <header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">
+                MALIK <span>MART.</span>
+            </a>
+            <ul class="navlist flex">
+                <li><a href="/index.html" class="link link-active">Home</a></li>
+                <li><a href="/shop.html" target="_blank" class="link">Shop</a></li>
+                <li><a href="/page.html" target="_blank" class="link">Page</a></li>
+                <li><a href="/blog.html" target="_blank" class="link">Blog</a></li>
+                <li><a href="/contact.html" class="link">Contact</a></li>
+                <li class="nav-icons flex">
+                    <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="icon"><i class="fa-solid fa-user"></i></a>
+                    <a href="/cart.html" class="icon icon-active"><i class="fa-solid fa-shopping-bag"></i></a>
+                </li>
+            </ul>
+            <a href="#" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <section class="section"></section>
+    <!-- 🛒 Cart Table -->
+    <main>
+        <div class="cart-container">
+            <h1>Your Shopping Cart</h1>
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                        <th>Remove</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- JS will add items here -->
+                </tbody>
+            </table>
+
+            <div class="cart-total">
+                <h3>Total: $<span id="total-amount">0.00</span></h3>
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="index.js"></script> <!-- optional -->
+    <script src="cart.js"></script>
+</body>
+
+</html>

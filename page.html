@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page | Malik Mart</title>
+    <!--link rel="stylesheet" href="mart.css"-->
+    <link rel="stylesheet" href="page.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- Navbar (same as mart.html) -->
+    <header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">MALIK <span>MART.</span></a>
+            <ul class="navlist flex">
+                <li><a href="/index.html" class="link">Home</a></li>
+                <li><a href="/shop.html" class="link">Shop</a></li>
+                <li><a href="/page.html" class="link link-active">Page</a></li>
+                <li><a href="/blog.html" class="link">Blog</a></li>
+                <li><a href="/contact.html" class="link">Contact</a></li>
+                <li class="nav-icons flex">
+                    <a href="#" class="icon" onclick="toggleSearch()"><i class="fa fa-search"></i></a>
+                    <a href="#" class="icon" onclick="toggleUser()"><i class="fa fa-user"></i></a>
+                    <a href="/cart.html" class="icon">
+  <i class="fa fa-shopping-cart"></i></a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- Search Bar Box (Hidden by default) -->
+    <div class="search-box" id="searchBox">
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." id="searchInput" />
+            <button onclick="performSearch()"><i class="fa fa-search"></i></button>
+            <span class="close-search" onclick="toggleSearch()">&times;</span>
+        </div>
+    </div>
+
+    <!-- User Login/Register Box -->
+    <div class="user-box" id="userBox">
+        <div class="user-container">
+            <span class="close-user" onclick="toggleUser()">&times;</span>
+            <h2>Welcome to Malik Mart</h2>
+            <input type="email" placeholder="Email" id="userEmail">
+            <input type="password" placeholder="Password" id="userPassword">
+            <button onclick="loginUser()">Login</button>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <!-- Search Box -->
+    <div id="searchBox" style="display:none; padding: 10px; background: #f1f1f1; text-align:center;">
+        <input type="text" placeholder="Search here..." style="padding: 10px; width: 50%;">
+    </div>
+
+    <!-- User Box -->
+    <div id="userBox" style="display:none; padding: 10px; background: #f1f1f1; text-align:center;">
+        <p><strong>User Panel:</strong> Login | Register</p>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero section">
+        <div class="container">
+            <h1> Welcome To Our Store.</h1>
+
+            <p>Discover more about Malik Mart, our journey, values, and vision for fashion and lifestyle.</p>
+            <section class="section"> <img src="./img.mart/i.jpg"></section>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section class="section-image">
+        <div class="container">
+            <h2>About Malik Mart</h2>
+            <p>
+
+                **Malik Mart** ek bharosemand aur modern online shopping platform hai jo aapko quality products
+                aasan
+                daam par faraham karta hai. Humari koshish hai ke har customer ko behtareen service aur tez
+                delivery di
+                jaye. Malik Mart ke saath shopping ka maza hi kuch aur hai!
+
+                Agar chahiye to thoda aur formal ya casual style mein bhi likh sakta hoon.
+            </p>
+        </div>
+    </section>
+    <section class="section"></section>
+    <!-- Features -->
+    <section class="section secondary-bg">
+        <div class="container flex wrap">
+            <div class="box">
+                <i class="fa fa-truck"></i>
+                <h5>Fast Delivery</h5>
+                <p>We deliver all over Pakistan within 3–5 working days.</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-gift"></i>
+                <h5>Gift Packages</h5>
+                <p>Want to surprise someone? Choose gift wrapping at checkout.</p>
+            </div>
+            <div class="box">
+                <i class="fa fa-shield-alt"></i>
+                <h5>Secure Payment</h5>
+                <p>We use secure payment gateways and offer Cash on Delivery.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section">
+        <div class="container center">
+            <h2>Join Our Community</h2>
+            <p>Subscribe to our newsletter and stay updated with the latest offers!</p>
+            <a href="/i am mart/contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section">
+        <div class="footer-container container flex wrap">
+            <ul class="footer-list">
+                <li><a href="#" class="footer-link">About us</a></li>
+                <li><a href="#" class="footer-link">Online store</a></li>
+                <li><a href="#" class="footer-link">Blog</a></li>
+                <li><a href="#" class="footer-link">Contact</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><a href="#" class="footer-link">Login/register</a></li>
+                <li><a href="#" class="footer-link">Your cart</a></li>
+                <li><a href="#" class="footer-link">Wishlist items</a></li>
+                <li><a href="#" class="footer-link">Contact us</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li><a href="#" class="footer-link">FAQs</a></li>
+                <li><a href="#" class="footer-link">Terms of service</a></li>
+                <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                <li><a href="#" class="footer-link">Returns</a></li>
+            </ul>
+            <ul class="footer-list">
+                <li class="footer-logo"><a href="#" class="logo">MALIK <span>MART.</span></a></li>
+                <li>
+                    <p class="detail">Sakrand City, Qazi Ahmed Road</p>
+                </li>
+                <li>
+                    <p class="detail">030 414 66554</p>
+                </li>
+                <li>
+                    <p class="detail">malikmart@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 <a href="#" class="link">MALIKMART.</a> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="page.js"></script>
+</body>
+
+</html>

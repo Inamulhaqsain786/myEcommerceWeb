@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - MalikMart</title>
+    <link rel="stylesheet" href="contact.css" />
+    <!-- ✅ Add this CDN link for Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="section"></section>
+
+    <header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">
+                MALIK <span>MART.</span>
+            </a>
+            <ul class="navlist flex">
+                <li>
+                    <a href="/index.html" target="blank" class="link">home</a>
+                </li>
+
+                <li>
+                    <a href="/shop.html" target="blank" class="link">Shop</a>
+                </li>
+
+                <li>
+                    <a href="/page.html" target="blank" class="link">Page</a>
+                </li>
+
+                <li>
+                    <a href="/blog.html" target="blank" class="link">Blog</a>
+                </li>
+
+                <li>
+                    <a href="/contact.html" class="link link-active">Contact</a>
+                </li>
+
+
+                <li class="nav-icons flex">
+
+
+
+                    <a href="#" class="icon" onclick="toggleUser()">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+<a href="/cart.html" class="icon">
+  <i class="fa fa-shopping-cart"></i>
+</a>
+
+
+                </li>
+
+            </ul>
+            <a href="#" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+
+    <!-- User Login/Register Box -->
+    <div class="user-box" id="userBox">
+        <div class="user-container">
+            <span class="close-user" onclick="toggleUser()">&times;</span>
+            <h2>Welcome to Malik Mart</h2>
+            <input type="email" placeholder="Email" id="userEmail">
+            <input type="password" placeholder="Password" id="userPassword">
+            <button onclick="loginUser()">Login</button>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <!--sections here-->
+
+
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+
+    <!--footr-->
+
+    <footer class="section">
+        <div class="footer-container container flex wrap">
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">About us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Online store</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">Loging/register</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Your cart</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Wishlist items</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">contact us</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">FAQs</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">term of servies</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Retruns</a>
+                </li>
+            </ul>
+
+
+
+            <ul class="footer-list">
+                <li class="footer-logo">
+                    <a href="#" class="logo">
+                        MALIK <span>MART.</span>
+                    </a>
+                </li>
+                <li>
+                    <p class="detail">Sakrand City, kazi Ahmed Road</p>
+                </li>
+                <li>
+                    <p class="detail">030 414 66554 </p>
+                </li>
+                <li>
+                    <p class="detail">MALIKMART@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2025
+                <a href="#" class="link">MALIKMART.</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALIK MART.SHOP</title>
+    <link rel="stylesheet" href="shop.css">
+    <!-- ✅ Add this CDN link for Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <section class="section">
+        <!--Navbar here-->
+        <header>
+            <nav class="navbar flex container">
+                <a href="#" class="logo">
+                    MALIK <span>MART.</span>
+                </a>
+                <ul class="navlist flex">
+                    <li>
+                        <a href="/index.html" class="link ">home</a>
+                    </li>
+
+                    <li>
+                        <a href="/shop.html" class="link link-active">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="/page.html" class="link">Page</a>
+                    </li>
+
+                    <li>
+                        <a href=blog.html" class="link">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact.html" class="link">Contact</a>
+                    </li>
+
+
+                    <li class="nav-icons flex">
+                        <a href="#" class="icon" onclick="toggleSearch()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+
+
+                        <a href="#" class="icon" onclick="toggleUser()">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        
+<a href="/cart.html" class="icon icon-active cart-icon">
+    <i class="fa-solid fa-shopping-bag"></i>
+</a>
+</li>
+                </ul>
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+        </header>
+
+
+
+
+
+        <!-- Search Bar Box (Hidden by default) -->
+        <div class="search-box" id="searchBox">
+            <div class="search-container">
+                <input type="text" placeholder="Search products..." id="searchInput" />
+                <button onclick="performSearch()"><i class="fa fa-search"></i></button>
+                <span class="close-search" onclick="toggleSearch()">&times;</span>
+            </div>
+        </div>
+
+        <!-- User Login/Register Box -->
+        <div class="user-box" id="userBox">
+            <div class="user-container">
+                <span class="close-user" onclick="toggleUser()">&times;</span>
+                <h2>Welcome to Malik Mart</h2>
+                <input type="email" placeholder="Email" id="userEmail">
+                <input type="password" placeholder="Password" id="userPassword">
+                <button onclick="loginUser()">Login</button>
+                <p>Don't have an account? <a href="#">Register</a></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <h2>Products</h2>
+            <div class="line"></div>
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/-original-imahyyqnmwqzcwgs.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/1_image-4.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/41EjAo-J5yL._SY1000_.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/5d5095-3-front_1_1.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+    <div class="container">
+        <section class="section">
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/61d8JlyRdQL._UF350,350_QL80_.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/61sVkd6-rdL._UF350,350_QL80_.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/719Xgb7Vm-L._UF350,350_QL80_.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/alexander-andrews-c_MODeV_7ig-un.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+    </div>
+
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/Apple-Vison-Pro-WWDC-2023.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/Category_Dresses.gif">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/Category_HandBags.gif">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/Category_Men_Casual_Shirt.gif">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/Chocolate 72 Inch Flat Screen Sl.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/facd7cebedbea468c99fde4417261acb.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/food-main-banner.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/Haier-Free-AC-Installation.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/Haier-Free-AC-Installation.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/image-253.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/images 10.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/images 2.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/images 3.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/images 4.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/images 5.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/images 6.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/images 7.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/images 8.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/images.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/iphone-14-pro-model-select-20220.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/mac-cosmetics.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/Mountain_Buggy_skyrider_V1_hero_.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/pexels-alexazabache-3907507.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/pexels-javon-swaby-197616-278387.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+
+    <section class="section">
+        <div class="container">
+            <div class="card-container flex wrap">
+                <div class="card sale">
+                    <img src="img.prod/pexels-pixabay-258244.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card sale">
+                    <img src="img.prod/pexels-pixabay-279480.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <del>$150.00</del>
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/pexels-pixabay-4158.jpg">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class="amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="card new">
+                    <img src="img.prod/Pocket-Fans-is-the-useful-and-im.webp">
+                    <div class="card-content">
+                        <p class="title">Leather Black Handbag Out Edition</p>
+                        <div class="price">
+                            <span class=" amount">$100.00</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+            </div> <!-- End of .card-container -->
+        </div> <!-- End of inner wrapper -->
+    </section>
+
+
+   <script src="shop.js"></script>
+
+</body>
+
+</html>

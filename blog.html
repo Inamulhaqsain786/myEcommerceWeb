@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MALIK MART.BLOG</title>
+
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="blog.css" />
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <section>
+        <header>
+            <nav class="navbar flex container">
+                <a href="/index.html" class="logo">
+                    MALIK <span>MART.</span>
+                </a>
+                <ul class="navlist flex">
+                    <li>
+                        <a href="/index.html" target="blank" class="link">home</a>
+                    </li>
+
+                    <li>
+                        <a href="/shop.html" target="blank" class="link">Shop</a>
+                    </li>
+
+                    <li>
+                        <a href="/page.html" target="blank" class="link">Page</a>
+                    </li>
+
+                    <li>
+                        <a href="/blog.html" target="blank" class="link link-active">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="/contact.html" class="link">Contact</a>
+                    </li>
+
+
+                    <li class="nav-icons flex">
+
+
+
+                        <a href="#" class="icon" onclick="toggleUser()">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+
+<a href="/cart.html" class="icon">
+  <i class="fa fa-shopping-cart"></i>
+  
+</a>
+
+
+
+                </ul>
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </nav>
+
+
+            <!-- User Login/Register Box -->
+            <div class="user-box" id="userBox">
+                <div class="user-container">
+                    <span class="close-user" onclick="toggleUser()">&times;</span>
+                    <h2>Welcome to Malik Mart</h2>
+                    <input type="email" placeholder="Email" id="userEmail">
+                    <input type="password" placeholder="Password" id="userPassword">
+                    <button onclick="loginUser()">Login</button>
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </div>
+
+        </header>
+
+
+
+
+        <!-- Hero Banner -->
+        <section class="hero section">
+            <h1>Summer Fashion</h1>
+            <p>Big sale of this week up to <strong>30%</strong> off</p>
+            <button class="btn-hero" onclick="location.href='/shop.html'"">Shop Now</button>
+        </section>
+
+        <!-- Cards Section -->
+        <section class=" malikmart-cards-container" id="shop">
+
+                <div class="malikmart-card">
+                    <div class="card-img">
+                        <img src="img.blog/men (4).jpg" alt="Male Outfit" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Stylish Men's Outfit</h3>
+                        <p>Explore latest summer trends for men in 2025.</p>
+                        <button class="btn-shop" onclick="location.href='shop.html?category=men'">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="malikmart-card">
+                    <div class="card-img">
+                        <img src="img.blog/women (1).jpg" alt="Female Outfit" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Elegant Women's Wear</h3>
+                        <p>Discover chic and trendy women's collections.</p>
+                        <button class="btn-shop" onclick="location.href='shop.html?category=women'">Shop Now</button>
+                    </div>
+                </div>
+
+                <div class="malikmart-card">
+                    <div class="card-img">
+                        <img src="img.blog/handbag.jpg" alt="Handbag" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Trendy Handbags</h3>
+                        <p>Handcrafted leather bags for every occasion.</p>
+                        <button class="btn-shop" onclick="location.href='shop.html?category=accessories'">Shop
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="malikmart-card">
+                    <div class="card-img">
+                        <img src="img.blog/shoose.jpg" alt="Shoes" />
+                    </div>
+                    <div class="card-content">
+                        <h3>Fashionable Shoes</h3>
+                        <p>Step out in style with our exclusive shoe range.</p>
+                        <button class="btn-shop" onclick="location.href='shop.html?category=shoes'">Shop Now</button>
+                    </div>
+                </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section contact">
+                    <h4>Contact Us</h4>
+                    <p>MALIK MART.</p>
+                    <p>Sakrand City, Kazi Ahmed Road</p>
+                    <p>Phone: 030 414 66554</p>
+                    <p>Email: <a href="mailto:MALIKMART@gmail.com">MALIKMART@gmail.com</a></p>
+                </div>
+
+                <div class="footer-section newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Get updates on latest products and offers.</p>
+                    <input type="email" placeholder="Your Email" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MALIK MART. All rights reserved.</p>
+            </div>
+        </footer>
+
+
+        <script src="index.js"></script>
+</body>
+
+</html>

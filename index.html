@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+
+
+    <!--Navbar here-->
+    <header>
+        <nav class="navbar flex container">
+            <a href="#" class="logo">
+                MALIK <span>MART.</span>
+            </a>
+            <ul class="navlist flex">
+                <li>
+                    <a href="index.html" class="link link-active">home</a>
+                </li>
+
+                <li>
+                    <a href="shop.html" target="blank" class="link">Shop</a>
+                </li>
+
+                <li>
+                    <a href="page.html" class="link">Page</a>
+
+                </li>
+
+                <li>
+                    <a href="blog.html" target="blank" class="link">Blog</a>
+                </li>
+
+                <li>
+                    <a href="/contact.html" class="link">Contact</a>
+                </li>
+
+
+                <li class="nav-icons flex">
+                    <a href="#" class="icon" onclick="toggleSearch()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+
+
+                    <a href="#" class="icon" onclick="toggleUser()">
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+
+
+<a href="/cart.html" class="icon icon-active cart-icon">
+    <i class="fa-solid fa-shopping-bag"></i>
+    
+</a>
+
+
+                </li>
+
+            </ul>
+            <a href="#" class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+
+
+
+    <!-- Search Bar Box (Hidden by default) -->
+    <div class="search-box" id="searchBox">
+        <div class="search-container">
+            <input type="text" placeholder="Search products..." id="searchInput" />
+            <button onclick="performSearch()"><i class="fa fa-search"></i></button>
+            <span class="close-search" onclick="toggleSearch()">&times;</span>
+        </div>
+    </div>
+
+    <!-- User Login/Register Box -->
+    <div class="user-box" id="userBox">
+        <div class="user-container">
+            <span class="close-user" onclick="toggleUser()">&times;</span>
+            <h2>Welcome to Malik Mart</h2>
+            <input type="email" placeholder="Email" id="userEmail">
+            <input type="password" placeholder="Password" id="userPassword">
+            <button onclick="loginUser()">Login</button>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+
+    <!--sections here-->
+
+    <main>
+        <section class="hero ">
+            <div class="hero-content flex container">
+                <div>
+                    <h3>Summer Fashion</h3>
+                    <h1>New Collection</h1>
+                    <h4>Big sale of this week up to <span>30%</span></h4>
+                    <button><a href="/shop.html">Shop Now</a></button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="category-container container">
+                <div class="category">
+                    <img src="img.mart/for men.jpg">
+                    <button>For Men's</button>
+                </div>
+
+
+                <div class="category">
+                    <img src="img.mart/for kids.jpg">
+                    <button>For Kid's</button>
+                </div>
+
+                <div class="category">
+                    <img src="img.mart/for accessories.jpg">
+                    <button>For Accessories</button>
+                </div>
+
+                <div class="category">
+                    <img src="img.mart/for women.jpg">
+                    <button>For Women's</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="section">
+            <div class="container">
+                <h2>New Products</h2>
+                <div class="line"></div>
+
+                <div class="card-container flex wrap">
+                    <div class="card sale">
+                        <img src="img.mart/card-image1.jpg">
+                        <div class="card-content">
+                            <p class="title">Leather Black Handbag Out Edition</p>
+                            <div class="price">
+                                <span class=" amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+
+                        </div>
+                    </div>
+
+                    <div class="card sale">
+                        <img src="img.mart/card-image2.jpg">
+                        <div class="card-content">
+                            <p class="title">Leather Black Handbag Out Edition</p>
+                            <div class="price">
+                                <del>$150.00</del>
+                                <span class=" amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card new">
+                        <img src="img.mart/card-image3.jpg">
+                        <div class="card-content">
+                            <p class="title">Leather Black Handbag Out Edition</p>
+                            <div class="price">
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="card new">
+                        <img src="img.mart/card-image4.jpg">
+                        <div class="card-content">
+                            <p class="title">Leather Black Handbag Out Edition</p>
+                            <div class="price">
+                                <span class=" amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+
+                </div> <!-- End of .card-container -->
+            </div> <!-- End of inner wrapper -->
+
+            <section class="section">
+                <div class="sale-container">
+                    <h3>New Trend 2025</h3>
+                    <h1>Woman's Collecton</h1>
+                    <div class="line">
+
+                    </div>
+                    <h4>Big sale of this week</h4>
+                    <button><a href="/shop.html">Shop Now</a></button>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <h2>Best Sale</h2>
+                    <div class="line"></div>
+
+                    <div class="card-container flex wrap">
+                        <div class="card">
+                            <img src="img.mart/card-image5.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card new">
+                            <img src="img.mart/card-image6.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img.mart/card-image7.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <span class="amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card sale">
+                            <img src="img.mart/card-image8.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <del>$150.00</del>
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </div> <!-- End of .card-container -->
+
+
+                    <div class="card-container flex wrap">
+                        <div class="card sale">
+                            <img src="img.mart/card-image9.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <del>$150.00</del>
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card new">
+                            <img src="img.mart/card-image10.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="img.mart/card-image11.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <span class="amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card sale">
+                            <img src="img.mart/card-image12.jpg">
+                            <div class="card-content">
+                                <p class="title">Leather Black Handbag Out Edition</p>
+                                <div class="price">
+                                    <del>$150.00</del>
+                                    <span class=" amount">$100.00</span>
+                                </div>
+                                <button class="add-to-cart">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </div> <!-- End of .card-container -->
+                </div>
+
+            </section>
+
+
+            <section class="section">
+                <div class="secondary-bg">
+                    <div class="container flex wrap">
+                        <div class="box">
+                            <i class="fa-solid fa-truck"></i>
+                            <h5>
+                                <a href="#">Free Shipping</a>
+                            </h5>
+                            <p class="des">Free shipping on order over $99</p>
+                        </div>
+
+
+                        <div class="box">
+                            <i class="fa-solid fa-money-bill-1"></i>
+                            <h5>
+                                <a href="#">Cash On Delivery</a>
+                            </h5>
+                            <p class="des">The Internet Trend to Repeat</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-gift"></i>
+                            <h5>
+                                <a href="#">Gift For All</a>
+                            </h5>
+                            <p class="des">Receive Gift When Subscribe</p>
+                        </div>
+
+                        <div class="box">
+                            <i class="fa-solid fa-clock"></i>
+                            <h5>
+                                <a href="#">6.00 am - 7.00 pm</a>
+                            </h5>
+                            <p class="des">Opening All Week</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section">
+                <div class="container">
+                    <h2>New Leatest</h2>
+                    <div class="line"></div>
+
+                    <div class="blog-container flex wrap">
+                        <div class="blog-box">
+                            <img src="img.mart/news-image1.jpg">
+                            <div class="blog-content">
+                                <h3 class="heading">
+                                    <a href="#">New Trend 2025 </a>
+                                </h3>
+                                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+                                    nulla
+                                    delectus? Sapiente
+                                    molestias labore esse, maiores delectus velit. </p>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+
+
+                        <div class="blog-box">
+                            <img src="img.mart/news-image2.jpg">
+                            <div class="blog-content">
+                                <h3 class="heading">
+                                    <a href="#">New Trend 2025 </a>
+                                </h3>
+                                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+                                    nulla
+                                    delectus? Sapiente
+                                    molestias labore esse, maiores delectus velit eveniet.</p>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+
+
+                        <div class="blog-box">
+                            <img src="img.mart/news-image3.jpg">
+                            <div class="blog-content">
+                                <h3 class="heading">
+                                    <a href="#">New Trend 2025 </a>
+                                </h3>
+                                <p class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta,
+                                    nulla
+                                    delectus? Sapiente
+                                    molestias labore esse, maiores delectus velit eveniet.</p>
+                                <a href="#" class="blog-link">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--last sign up-->
+
+            <section class="section">
+                <div class="secondary-bg">
+                    <div class="container">
+                        <form class="container flex wrap">
+                            <h3>Sign up for sand Newsletter</h3>
+                            <div class="input-container flex">
+                                <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off">
+                                <button>Subscribe</button>
+                            </div>
+
+                            <div class="social-icon flex">
+                                <a href="#" class="media">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+
+                                <a href="#" class="media">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+
+                                <a href="#" class="media">
+                                    <i class="fa-brands fa-google"></i>
+                                </a>
+
+                                <a href="#" class="media">
+                                    <i class="fa-brands fa-behance"></i>
+                                </a>
+
+                                <a href="#" class="media">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!--footr-->
+
+    <footer class="section">
+        <div class="footer-container container flex wrap">
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">About us</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Online store</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Blog</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">Loging/register</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Your cart</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Wishlist items</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">contact us</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <a href="#" class="footer-link">FAQs</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">term of servies</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                </li>
+
+                <li>
+                    <a href="#" class="footer-link">Retruns</a>
+                </li>
+            </ul>
+
+
+
+            <ul class="footer-list">
+                <li class="footer-logo">
+                    <a href="#" class="logo">
+                        MALIK <span>MART.</span>
+                    </a>
+                </li>
+                <li>
+                    <p class="detail">Sakrand City, kazi Ahmed Road</p>
+                </li>
+                <li>
+                    <p class="detail">030 414 66554 </p>
+                </li>
+                <li>
+                    <p class="detail">MALIKMART@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy;2025
+                <a href="#" class="link">MALIKMART.</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
